@@ -1,0 +1,7 @@
+<div class="ekart--search--product">
+    <!-- 2. create input to  bind and to identify the change -->
+    <input type="text" class="ekart--search--product--input" #searchInput >
+    <button class="btn btn-search" (click)="UpdateEvent()" >Search</button>
+</div>
+<div class="ekart-search-result-for"><p *ngIf="SearchTextBox != '' "><strong>Search result for:</strong>{{SearchTextBox}}</p></div>
+ 

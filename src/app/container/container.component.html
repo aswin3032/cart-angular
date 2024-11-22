@@ -1,0 +1,23 @@
+
+<div class="ekart--product--container">
+    <!-- <img [src]="product.pImage" alt="">
+    <P>Name : {{product.name}} </P>
+    <P>Price : {{'$'+ product.price}} </P>
+    
+    <P>Color :  {{product.color}}  </P>
+    <P>Discount : {{"$"+getdiscountedPrice().toFixed(2)}} </P>
+    <p>{{product.instocks>0? 'only'+product.instocks+'itemleft':'not item in stock' }}</p>
+   
+    <input  (input)="onNameChange($event)"  bind-value="name"><br>
+    <p>name{{name}}</p> -->
+    <!-- <button (click)="decrementCartValue()">-</button>
+    <span>{{addtoCart}}</span>
+    <button (click)="incrementCartValue()">+</button> */  -->
+     <!--5. for emit data from chid component   -->
+     <search (SearchTextChanged)="setSearchText($event)"></search>
+
+    <!-- 9. in this part where the container component and the product list component are connected the square baracket search text from the productlist component and other one from the container ts -->
+
+     <product-list [searchText]="searchText" #productListComponent></product-list>
+     <product-detalils *ngIf="productListComponent.selectedProduct" [productListComp]="productListComponent"></product-detalils>
+</div>

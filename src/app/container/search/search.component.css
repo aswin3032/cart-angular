@@ -1,0 +1,50 @@
+/* Center the container and add styling */
+.ekart--search--product {
+    display: flex;
+    justify-content: center; /* Centers the input and button horizontally */
+    align-items: center; /* Aligns items vertically */
+    margin: 20px auto; /* Adds some margin around the container */
+    gap: 10px; /* Adds space between input and button */
+    max-width: 600px; /* Limits the width of the container */
+    padding: 10px;
+    border: 2px solid #ddd; /* Adds a light border */
+    border-radius: 8px; /* Rounds the corners of the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a 3D effect */
+    background-color: #f9f9f9; /* Light background for contrast */
+  }
+  
+  /* Style for the input box */
+  .ekart--search--product--input {
+    flex: 1; /* Allows the input to grow and fill the available space */
+    padding: 10px 15px; /* Adds padding inside the input */
+    font-size: 16px; /* Increases the font size */
+    border: 2px solid #ccc; /* Adds a border to the input */
+    border-radius: 4px; /* Rounds the corners of the input */
+    transition: border-color 0.3s ease; /* Smooth transition for the border color */
+  }
+  
+  /* Change border color on focus */
+  .ekart--search--product--input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Removes the default outline */
+  }
+  
+  /* Style for the button */
+  .btn-search {
+    padding: 10px 20px; /* Adds padding inside the button */
+    background-color:#333333;  /* Blue background for the button */
+    color: white; /* White text color */
+    border: none; /* Removes the default border */
+    border-radius: 4px; /* Rounds the corners of the button */
+    cursor: pointer; /* Adds a pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for the background color */
+  }
+  
+  /* Change button color on hover */
+  .btn-search:hover {
+   
+    background-color: #007bff ;/* Darker blue on hover */
+  }
+  p{
+    margin-left: 600px;
+  }
